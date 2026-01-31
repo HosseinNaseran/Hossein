@@ -103,10 +103,11 @@ body {
 .header-bottom-title {
     margin-bottom: -1.5rem;
 }
-.header-bottom-title-sec{
+
+.header-bottom-title-sec {
     opacity: 0.7;
     font-weight: 100;
-    
+
 }
 
 .header-bottom-text {
@@ -128,12 +129,14 @@ body {
 
 .main-right-title {
     margin: 0;
-    
+
 }
-.main-right-title-sec{
+
+.main-right-title-sec {
     font-weight: 100;
     margin-bottom: -0.5rem;
 }
+
 .main-right-para {
     margin: 3rem 0;
     max-width: 25rem;
@@ -150,6 +153,7 @@ body {
     width: 100%;
     box-shadow: 0px 0px 5px green;
     border-radius: 20px;
+
 }
 
 .main-left-img-cover {
