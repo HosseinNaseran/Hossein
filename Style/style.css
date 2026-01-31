@@ -151,13 +151,13 @@ body {
 
 .main-left-img {
     width: 100%;
-    box-shadow: 0px 0px 5px green;
+    /* box-shadow: 0px 0px 5px green; */
     border-radius: 20px;
-
+    background: linear-gradient(50deg, rgb(5, 121, 5), rgb(170, 255, 0));
 }
 
 .main-left-img-cover {
-    width: 10rem;
+    width: 15rem;
 }
 
 .main-tec {
@@ -227,5 +227,138 @@ footer {
     box-shadow: 0px 0px 5px white;
     border: 1px solid white;
     margin: 1rem 10rem;
+
+}
+
+
+
+/* Project Responsive */
+
+@media (max-width : 1400px) {
+    .header-bottom {
+        /* flex-direction: column; */
+        gap: 5rem;
+    }
+
+}
+
+@media (max-width : 1200px) {
+    .main-tec-items {
+        flex-direction: column;
+        width: 30rem;
+        gap: 3rem;
+
+        align-self: center;
+    }
+
+    .main-exp {
+        flex-direction: column;
+    }
+
+    footer {
+        min-width: 25rem;
+        justify-self: center;
+    }
+
+
+}
+
+@media (max-width : 1024px) {
+    .header-bottom-text {
+
+        max-width: 40rem;
+
+    }
+
+    .header-bottom-para {
+        margin-left: auto;
+        margin-right: auto;
+
+
+
+    }
+
+    .header-bottom-img {
+
+        display: none;
+
+    }
+
+    .header-bottom {
+        flex-direction: column;
+        margin-bottom: 5rem;
+    }
+
+    .header-bottom-text {
+        max-width: 700px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .header-bottom-title {
+        text-align: center;
+    }
+}
+
+@media (max-width : 900px) {
+    .header-bottom-text {
+        max-width: 500px;
+    }
+
+    .header-top {
+        min-width: 30rem;
+    }
+
+}
+
+@media (max-width :750px) {
+    .header-bottom-text {
+        max-width: 400px;
+
+    }
+
+    .header-top {
+        min-width: 25rem;
+    }
+
+}
+
+@media (max-width : 640px) {
+
+    .header-top {
+
+        justify-self: center;
+        align-items: center;
+        min-width: 17rem;
+        padding: 0 2rem;
+        margin: 0;
+
+
+
+    }
+
+    .main-tec-items {
+        width: 15rem;
+    }
+
+    .main-tec-item {
+        width: 15rem;
+        align-self: center;
+    }
+
+    footer {
+        position: fixed;
+        bottom: 0;
+        min-width: 17rem;
+        background-color: black;
+        padding: 0 20px;
+        margin: 0;
+
+
+    }
+
+    #del_phone {
+        display: none;
+    }
 
 }
