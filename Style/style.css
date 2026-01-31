@@ -39,6 +39,7 @@ body {
 .logos {
     list-style: none;
     display: flex;
+    gap: 10px;
 
 }
 
@@ -99,7 +100,14 @@ body {
 
 }
 
-.header-bottom-title {}
+.header-bottom-title {
+    margin-bottom: -1.5rem;
+}
+.header-bottom-title-sec{
+    opacity: 0.7;
+    font-weight: 100;
+    
+}
 
 .header-bottom-text {
     max-width: 50rem;
@@ -120,8 +128,12 @@ body {
 
 .main-right-title {
     margin: 0;
+    
 }
-
+.main-right-title-sec{
+    font-weight: 100;
+    margin-bottom: -0.5rem;
+}
 .main-right-para {
     margin: 3rem 0;
     max-width: 25rem;
