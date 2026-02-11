@@ -73,24 +73,42 @@ body {
 
 .header-bottom-imgs {
     width: 20rem;
+    
 }
 
 .header-bottom-img {
     border-radius: 100%;
-    border: 2px solid white;
     width: 100%;
-    opacity: 0.5;
-}
-
-.header-bottom-imgs :hover {
-    box-shadow: 0px 0px 50px 2px rgb(0, 100, 0);
-    border: 2px solid greenyellow;
-    transition: 0.5s;
     opacity: 1;
-
+    animation: Ngreen 5s infinite linear;
+    
 }
 
-.header-bottom-imgs {}
+
+
+@keyframes Ngreen {
+    0% {
+        border: 3px solid #00ff66
+    }
+
+    25% {
+        border: 3px solid #00ffaa
+    }
+
+    50% {
+        border: 3px solid #00eaff
+    }
+
+    75% {
+        border: 3px solid #00ffaa
+    }
+
+    100% {
+        border: 3px solid #00ff66
+    }
+}
+
+
 
 .header-bottom-para {
     /* width: 50rem; */
@@ -162,11 +180,11 @@ body {
 
 .main-left-img-cover:first-child {
     background: linear-gradient(50deg, rgb(5, 121, 5), rgb(170, 255, 0));
+    transition: 0.5s;
 }
 
-.main-left-img-cover:first-child :hover {
+.main-left-img-cover:first-child:hover {
     box-shadow: 0px 0px 40px green;
-    transition: 0.5s;
     height: 100%;
 
 }
@@ -175,25 +193,26 @@ body {
 
 .main-left-img-cover:nth-child(2) {
     background-color: white;
+    transition: 0.5s;
 
 
 }
 
 .main-left-img-cover:nth-child(2):hover {
-    transition: 0.5s;
-    box-shadow: 0px 0px 40px  gray;
+    box-shadow: 0px 0px 40px gray;
 
 
 }
 
 
 .main-left-img-cover:nth-child(3) {
-    background-color: black
+    background-color: black;
+    transition: 0.5s;
+
 }
 
 .main-left-img-cover:nth-child(3):hover {
 
-    transition: 0.5s;
     box-shadow: 0px 0px 40px gray;
 }
 
@@ -283,7 +302,7 @@ footer {
 
 @media (max-width : 1400px) {
     .header-bottom {
-        
+
         gap: 5rem;
     }
 
@@ -379,20 +398,22 @@ footer {
         justify-self: center;
         align-items: center;
         min-width: 5rem;
-        
+
 
     }
-    .header-bottom{
+
+    .header-bottom {
         margin-top: 7rem;
         flex-direction: column-reverse;
         gap: 1rem;
     }
-     .header-bottom-img {
+
+    .header-bottom-img {
 
         display: flex;
         width: 15rem;
         justify-self: center;
-        
+
 
 
     }
