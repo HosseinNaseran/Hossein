@@ -66,7 +66,7 @@ body {
 .header-bottom {
     display: flex;
     justify-content: space-between;
-    margin: 10rem 0rem;
+    margin: 11.6rem 0rem;
     align-items: center;
 
 }
@@ -97,16 +97,17 @@ body {
 
 
 
-
 }
 
 .header-bottom-title {
     margin-bottom: -1.5rem;
+
 }
 
 .header-bottom-title-sec {
     opacity: 0.7;
     font-weight: 100;
+
 
 }
 
@@ -120,7 +121,7 @@ body {
 .main-exp {
     display: flex;
     justify-content: space-between;
-
+    margin-bottom: 5rem;
 }
 
 .main-right {
@@ -164,7 +165,7 @@ body {
 }
 
 .main-left-img-cover:first-child :hover {
-    box-shadow: 0px 0px 50px 10px  green;
+    box-shadow: 0px 0px 40px green;
     transition: 0.5s;
     height: 100%;
 
@@ -174,25 +175,26 @@ body {
 
 .main-left-img-cover:nth-child(2) {
     background-color: white;
-   
+
 
 }
 
 .main-left-img-cover:nth-child(2):hover {
     transition: 0.5s;
-    box-shadow: 0px 0px 50px 10px gray;
+    box-shadow: 0px 0px 40px  gray;
 
 
 }
 
 
-.main-left-img-cover:nth-child(3){
+.main-left-img-cover:nth-child(3) {
     background-color: black
 }
+
 .main-left-img-cover:nth-child(3):hover {
-   
-  transition: 0.5s;
-    box-shadow: 0px 0px 50px gray;
+
+    transition: 0.5s;
+    box-shadow: 0px 0px 40px gray;
 }
 
 
@@ -281,7 +283,7 @@ footer {
 
 @media (max-width : 1400px) {
     .header-bottom {
-        /* flex-direction: column; */
+        
         gap: 5rem;
     }
 
@@ -309,11 +311,6 @@ footer {
 }
 
 @media (max-width : 1024px) {
-    .header-bottom-text {
-
-        max-width: 40rem;
-
-    }
 
     .header-bottom-para {
         margin-left: auto;
@@ -327,6 +324,7 @@ footer {
 
         display: none;
 
+
     }
 
     .header-bottom {
@@ -335,19 +333,22 @@ footer {
     }
 
     .header-bottom-text {
-        max-width: 700px;
+        max-width: 800px;
         margin-left: auto;
         margin-right: auto;
+        margin-top: 1.5rem;
     }
 
-    .header-bottom-title {
+    .header-bottom-title,
+    .header-bottom-title-sec {
         text-align: center;
+
     }
 }
 
 @media (max-width : 900px) {
     .header-bottom-text {
-        max-width: 500px;
+        max-width: 700px;
     }
 
     .header-top {
@@ -358,7 +359,7 @@ footer {
 
 @media (max-width :750px) {
     .header-bottom-text {
-        max-width: 400px;
+        max-width: 600px;
 
     }
 
@@ -369,18 +370,33 @@ footer {
 }
 
 @media (max-width : 640px) {
+    body {
+        margin: 0 1.98rem;
+    }
 
     .header-top {
 
         justify-self: center;
         align-items: center;
-        min-width: 17rem;
-        padding: 0 2rem;
-        margin: 0;
+        min-width: 5rem;
+        
 
+    }
+    .header-bottom{
+        margin-top: 7rem;
+        flex-direction: column-reverse;
+        gap: 1rem;
+    }
+     .header-bottom-img {
+
+        display: flex;
+        width: 15rem;
+        justify-self: center;
+        
 
 
     }
+
 
     .main-tec-items {
         width: 15rem;
@@ -394,11 +410,12 @@ footer {
     footer {
         position: fixed;
         bottom: 0;
-        min-width: 17rem;
-        background-color: black;
+        min-width: 20rem;
+        backdrop-filter: blur(20px);
         padding: 0 20px;
         margin: 0;
-
+        box-shadow: none;
+        border: none;
 
     }
 
