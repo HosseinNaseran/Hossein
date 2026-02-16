@@ -24,7 +24,7 @@ It is designed to showcase personal information, front-end development skills, a
 
 Here is screenshot of the website:
 
-![Page](Assets/screencapture-Hossein)
+![Page](https://github.com/HosseinNaseran/Hossein/blob/main/Assets/screencapture-Hossein.png)
 
 
 
