@@ -173,7 +173,7 @@ body {
 
 .main-left-img {
     width: 100%;
-  
+   border-radius: inherit;
 
 
 }
