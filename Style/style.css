@@ -1,10 +1,12 @@
 @font-face {
     font-family: Kara;
-    src: url(../Fonts/SGKara-Light.ttf);
+    src: url(../Fonts/Kara/SGKara-Light.ttf);
+    font-family:Vazir;
+    src: url(../Fonts/vazir/Vazir.ttf);
 }
 
 * {
-    font-family: Kara;
+    font-family: Vazir;
 }
 
 body {
@@ -171,9 +173,7 @@ body {
 
 .main-left-img {
     width: 100%;
-    /* height: 100%; */
-    /* box-shadow: 0px 0px 5px green; */
-    border-radius: inherit;
+  
 
 
 }
@@ -247,7 +247,7 @@ body {
 
 .main-tec-item {
     border: 1px solid white;
-    border-radius: 10px;
+   border-radius: 20px;
     display: flex;
     flex-direction: column;
     padding: 0 2rem;
