@@ -1,12 +1,13 @@
 @font-face {
     font-family: Kara;
     src: url(../Fonts/Kara/SGKara-Light.ttf);
-    font-family:Vazir;
+    font-family: Vazir;
     src: url(../Fonts/vazir/Vazir.ttf);
 }
 
 * {
     font-family: Vazir;
+    box-sizing: border-box;
 }
 
 body {
@@ -75,7 +76,7 @@ body {
 
 .header-bottom-imgs {
     width: 20rem;
-    
+
 }
 
 .header-bottom-img {
@@ -83,7 +84,7 @@ body {
     width: 100%;
     opacity: 1;
     animation: Ngreen 5s infinite linear;
-    
+
 }
 
 
@@ -168,12 +169,14 @@ body {
 .main-left {
     display: flex;
     gap: 1rem;
+    overflow-x: scroll;
+    width: 500px;
 
 }
 
 .main-left-img {
-    width: 100%;
-   border-radius: inherit;
+    width: 15rem;
+    border-radius: inherit;
 
 
 }
@@ -183,11 +186,10 @@ body {
     transition: 0.5s;
 }
 
-.main-left-img-cover:first-child:hover {
+/* .main-left-img-cover:first-child:hover {
     box-shadow: 0px 0px 40px green;
-    height: 100%;
 
-}
+} */
 
 
 
@@ -198,11 +200,11 @@ body {
 
 }
 
-.main-left-img-cover:nth-child(2):hover {
+/* .main-left-img-cover:nth-child(2):hover {
     box-shadow: 0px 0px 40px gray;
 
 
-}
+} */
 
 
 .main-left-img-cover:nth-child(3) {
@@ -211,15 +213,15 @@ body {
 
 }
 
+/* 
 .main-left-img-cover:nth-child(3):hover {
 
     box-shadow: 0px 0px 40px gray;
-}
+} */
 
 
 
 .main-left-img-cover {
-    width: 15rem;
     border-radius: 20px;
     display: flex;
     align-items: center;
@@ -247,7 +249,7 @@ body {
 
 .main-tec-item {
     border: 1px solid white;
-   border-radius: 20px;
+    border-radius: 20px;
     display: flex;
     flex-direction: column;
     padding: 0 2rem;
