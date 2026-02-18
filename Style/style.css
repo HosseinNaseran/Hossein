@@ -423,6 +423,13 @@ footer {
 
 
     }
+    .main-left{
+        width: 100%;
+        /* padding: 5rem; */
+    }
+    .main-left-img{
+        width: 200px;
+    }
 
 
     .main-tec-items {
