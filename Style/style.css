@@ -302,7 +302,7 @@ body {
     /*   Footer   */
 }
 
-footer {
+.footer-container {
 
     display: flex;
     justify-content: space-between;
@@ -314,8 +314,15 @@ footer {
     margin: 1rem 10rem;
     margin-left: auto;
     margin-right: auto;
-    /* outline: 1px solid grey; */
 
+
+}
+.copyright {
+    text-align: center;      
+    font-size: 12px;         
+    color: #888888;          
+    margin-top: 15px;        
+    direction: ltr;
 }
 
 
@@ -462,7 +469,7 @@ footer {
         align-self: center;
     }
 
-    footer {
+    .footer-container {
         position: fixed;
         bottom: 0;
 
