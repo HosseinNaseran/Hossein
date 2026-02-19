@@ -66,10 +66,13 @@ body {
     list-style: none;
     display: flex;
     gap: 1rem;
+    
 }
 
 .item {
     cursor: pointer;
+    text-decoration: none;
+     color: whitesmoke;
 }
 
 .header-bottom {
