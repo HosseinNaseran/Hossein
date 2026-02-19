@@ -213,7 +213,17 @@ body {
     align-items: center;
     margin: 10px;
     cursor: pointer;
+    border : 1px solid gray;
+    transition: 0.5s;
 }
+.main-left-img-cover:hover {
+
+    
+    opacity: 0.8;
+
+}
+
+
 
 .main-tec {
     margin-bottom: 10rem;
