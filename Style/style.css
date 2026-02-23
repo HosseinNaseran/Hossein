@@ -123,7 +123,7 @@ body {
 
 .header-bottom-para {
     /* width: 50rem; */
-
+    
 
 
 }
@@ -142,7 +142,26 @@ body {
 
 .header-bottom-text {
     max-width: 50rem;
+    
 
+}
+
+.header-bottom-button{
+    padding: 0.5rem 1rem;
+    color: white;
+    border: 2px solid #00ff66;
+    border-radius: 25px;
+    cursor: pointer;
+    text-decoration: none;
+    display: flex;
+    width: fit-content;
+    margin-top: 2rem;   
+    transition: 0.3s;
+}
+.header-bottom-button:hover {
+    background-color: #00ff66;
+    color: black;
+    /* border: 2px solid #00ff66; */
 }
 
 /*  main   */
@@ -179,26 +198,27 @@ body {
     /* gap: 1rem; */
     overflow-x: scroll;
     width: 700px;
+    gap: 1rem;
 
 }
 
 .main-left-img {
   
-    display: flex;
-    justify-content: center;
+    /* display: flex; */
+    /* justify-content: center; */
     align-items: center;
-    width: 15rem;
+    width: 20rem;
     border-radius: inherit;
-    
+     border : 1px solid gray;
 
 
 }
 
-.main-left-img-cover:first-child {
+/* .main-left-img-cover:first-child {
     background: linear-gradient(50deg, rgb(5, 121, 5), rgb(170, 255, 0));
 
 
-}
+} */
 /* 
 .main-left-img-cover:nth-child(2) {
     background-color: white;
@@ -208,32 +228,37 @@ body {
 
 
 } */
-
+/* 
 .main-left-img-cover:nth-child(3) {
     background: linear-gradient(#00eaff, #0059fd);
 
 
 
-}
+} */
 
 
 .main-left-img-cover {
-    border-radius: 20px;
+    border-radius: 25px;
     display: flex;
     align-items: center;
-    margin: 10px;
     cursor: pointer;
-    border : 1px solid gray;
-    transition: 0.5s;
-    /* padding:  0 2rem; */
+    width: 100%;
+    flex-direction: column;
+    list-style: none;
+    text-decoration: none;
+}
+.main-left-label{
+    padding: 0.5rem;
+    color: whitesmoke;
+    width: inherit;
+    /* backdrop-filter: blur(2px); */
+    margin-top: -40px;
+    text-align: center;
+    border-radius: 0 0 25px 25px;
+    background-color: #00000082;
     
 }
-.main-left-img-cover:hover {
 
-    
-    opacity: 0.8;
-
-}
 
 
 
@@ -314,9 +339,89 @@ body {
     width: 2rem;
     height: 2rem;
 
-    /*   Footer   */
 }
 
+
+
+                           /*  contactus  */
+
+
+.contactUsContainer{
+    margin: 5rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+
+.contactUsButton{
+    text-decoration: none;
+    background-color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    color: black;
+    width: fit-content;
+}
+
+.contactUs-inputs{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    
+        
+    gap: 1rem;
+    
+}
+.inputName,
+.inputNumber,
+.inputEmail,
+.inputMessage {
+  
+   display: flex;
+    flex-direction: column;
+    
+    
+}
+.contactUs-label{
+    font-size: 14px;
+
+}
+.inputEmail input{
+    width: 17rem;
+} 
+
+.inputMessage{
+    grid-column: 1 /span 3;
+    
+}
+
+textarea {
+    max-width: 40rem;
+    max-height: 10rem;
+    overflow: hidden;
+    min-width: 20rem;
+    min-height: 5rem;
+     
+}
+
+
+
+
+
+
+.contactUs-input{
+     background-color: #53535376;
+    border: none;
+    border-radius: 10px;
+    padding: 0.5rem 1rem;
+    color: white;
+    width: fit-content;
+    outline: none;
+    
+}
+
+
+
+                            /*   Footer   */ 
 .footer-container {
 
     display: flex;

@@ -6,7 +6,8 @@
     <meta name="google-site-verification" content="4vY90aVLJlBj1-TL7ADry4gvf-k20FjBR46I2Fp025M" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <meta name="description" content="وبسایت شخصی حسین ناصران / Hossein Naseran personal portfolio, توسعه‌دهنده فرانت‌اند / Front-End Developer، نمایش پروژه‌ها و مهارت‌ها / Showcasing projects and skills.">
+    <meta name="description"
+        content="وبسایت شخصی حسین ناصران / Hossein Naseran personal portfolio, توسعه‌دهنده فرانت‌اند / Front-End Developer، نمایش پروژه‌ها و مهارت‌ها / Showcasing projects and skills.">
 
     <script type="application/ld+json">
     {
@@ -74,6 +75,7 @@
                     این وب‌سایت برای نمایش نمونه‌کارها، مهارت‌ها و مسیر حرفه‌ای من ایجاد شده و به‌صورت مداوم به‌روزرسانی
                     می‌شود.
                 </p>
+                <a href="#ContactUsForm" class="header-bottom-button">تماس با من</a>
 
 
             </div>
@@ -89,12 +91,12 @@
                 <h5 class="main-right-title-sec">1 سال پر از</h5>
                 <h2 class="main-right-title">تجربه</h2>
                 <p class="main-right-para">تمرکز بر یادگیری📖 و رشد در فرانت اند با انجام پروژه های تمرینی</p>
-                
+
             </div>
             <div class="main-left">
                 <a class="main-left-img-cover" href="https://hosseinnaseran.github.io/FakeCafeBazar">
-                    <img src="./Assets/bazar.png" class="main-left-img" alt="FakeCafeBazar project by Hossein Naseran">
-
+                    <img src="./Assets/Bazar.png" class="main-left-img" alt="FakeCafeBazar project by Hossein Naseran">
+                    <label class="main-left-label">FakeCafeBazar</label>
                 </a>
                 <!-- <a class="main-left-img-cover">
 
@@ -103,11 +105,13 @@
             </a> -->
 
                 <a class="main-left-img-cover" href="https://hosseinnaseran.github.io/weather">
-                    <img src="./Assets/weather.jpg" class="main-left-img" alt="Weather project by Hossein Naseran">
+                    <img src="./Assets/Weather.png" class="main-left-img" alt="Weather project by Hossein Naseran">
+                    <label class="main-left-label">Weather</label>
 
                 </a>
                 <a class="main-left-img-cover" href="https://hosseinnaseran.github.io/iranox">
-                    <img src="./Assets/iranox.png" class="main-left-img" alt="Iranox project by Hossein Naseran">
+                    <img src="./Assets/Iranox.png" class="main-left-img" alt="Iranox project by Hossein Naseran">
+                    <label class="main-left-label">Iranox</label>
 
                 </a>
 
@@ -199,6 +203,38 @@
             </div>
         </div>
         </div>
+        <form class="contactUsContainer" id="ContactUsForm">
+            <div class="contactUs-top">
+                <h2 class="contactUsTitle">با من در ارتباط باشید</h2>
+                <p class="contactUsText">اگر سوالی دارید یا می‌خواهید همکاری کنید، خوشحال می‌شوم از شما بشنوم!</p>
+            </div>
+            <div class="contactUs-inputs" >
+
+                <div class="inputName">
+                    <label class="contactUs-label">نام شما</label>
+                    <input type="text"  class="contactUs-input" id="NameInput">
+                </div>
+                <div class="inputNumber">
+
+                    <label class="contactUs-label">شماره تماس</label>
+                    <input type="tel"  class="contactUs-input" id="NumberInput">
+                </div>
+
+                <div class="inputEmail">
+
+                    <label class="contactUs-label"> ایمیل</label>
+                    <input type="email"  class="contactUs-input" id="EmailInput">
+                </div>
+
+                <div class="inputMessage">
+
+                    <label class="contactUs-label">پیام شما</label>
+                    <textarea class="contactUs-input" id="MessageInput" ></textarea>
+                </div>
+            </div>
+
+            <input type="submit" value="ارسال" class="contactUsButton">
+        </form>
 
     </main>
 
