@@ -30,7 +30,7 @@ body {
     border-radius: 30px;
     align-items: center;
     padding: 0 1rem;
-     border: 2px solid #00ff66;
+    border: 2px solid #00ff66;
     min-width: 40rem;
     /* margin-left: auto; */
     /* margin-right: auto; */
@@ -48,7 +48,7 @@ body {
     list-style: none;
     display: flex;
     gap: 10px;
-   
+
 
 }
 
@@ -66,13 +66,13 @@ body {
     list-style: none;
     display: flex;
     gap: 1rem;
-    
+
 }
 
 .item {
     cursor: pointer;
     text-decoration: none;
-     color: whitesmoke;
+    color: whitesmoke;
 }
 
 .header-bottom {
@@ -123,7 +123,7 @@ body {
 
 .header-bottom-para {
     /* width: 50rem; */
-    
+
 
 
 }
@@ -142,11 +142,11 @@ body {
 
 .header-bottom-text {
     max-width: 50rem;
-    
+
 
 }
 
-.header-bottom-button{
+.header-bottom-button {
     padding: 0.5rem 1rem;
     color: white;
     border: 2px solid #00ff66;
@@ -155,9 +155,10 @@ body {
     text-decoration: none;
     display: flex;
     width: fit-content;
-    margin-top: 2rem;   
+    margin-top: 2rem;
     transition: 0.3s;
 }
+
 .header-bottom-button:hover {
     background-color: #00ff66;
     color: black;
@@ -203,13 +204,13 @@ body {
 }
 
 .main-left-img {
-  
+
     /* display: flex; */
     /* justify-content: center; */
     align-items: center;
     width: 20rem;
     border-radius: inherit;
-     border : 1px solid gray;
+    border: 1px solid gray;
 
 
 }
@@ -247,7 +248,8 @@ body {
     list-style: none;
     text-decoration: none;
 }
-.main-left-label{
+
+.main-left-label {
     padding: 0.5rem;
     color: whitesmoke;
     width: inherit;
@@ -256,7 +258,7 @@ body {
     text-align: center;
     border-radius: 0 0 25px 25px;
     background-color: #00000082;
-    
+
 }
 
 
@@ -297,7 +299,7 @@ body {
 .main-tec-items {
     display: flex;
     justify-content: space-around;
-    
+
 
 }
 
@@ -308,7 +310,7 @@ body {
     flex-direction: column;
     padding: 0 2rem;
     min-width: 300px;
-   
+
 
 
 
@@ -343,10 +345,10 @@ body {
 
 
 
-                           /*  contactus  */
+/*  contactus  */
 
 
-.contactUsContainer{
+.contactUsContainer {
     margin: 7rem 0;
     display: flex;
     flex-direction: column;
@@ -354,7 +356,7 @@ body {
 }
 
 
-.contactUsButton{
+.contactUsButton {
     text-decoration: none;
     background-color: white;
     padding: 0.5rem 1rem;
@@ -363,35 +365,38 @@ body {
     width: fit-content;
 }
 
-.contactUs-inputs{
+.contactUs-inputs {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    
-        
+
+
     gap: 1rem;
-    
+
 }
+
 .inputName,
 .inputNumber,
 .inputEmail,
 .inputMessage {
-  
-   display: flex;
+
+    display: flex;
     flex-direction: column;
-    
-    
+
+
 }
-.contactUs-label{
+
+.contactUs-label {
     font-size: 14px;
 
 }
-.inputEmail input{
-    width: 17rem;
-} 
 
-.inputMessage{
+.inputEmail input {
+    width: 17rem;
+}
+
+.inputMessage {
     grid-column: 1 /span 3;
-    
+
 }
 
 textarea {
@@ -400,7 +405,7 @@ textarea {
     overflow: hidden;
     min-width: 20rem;
     min-height: 5rem;
-     
+
 }
 
 
@@ -408,20 +413,20 @@ textarea {
 
 
 
-.contactUs-input{
-     background-color: #53535376;
+.contactUs-input {
+    background-color: #53535376;
     border: none;
     border-radius: 10px;
     padding: 0.5rem 1rem;
     color: white;
     width: fit-content;
     outline: none;
-    
+
 }
 
 
 
-                            /*   Footer   */ 
+/*   Footer   */
 .footer-container {
 
     display: flex;
@@ -437,11 +442,12 @@ textarea {
 
 
 }
+
 .copyright {
-    text-align: center;      
-    font-size: 12px;         
-    color: #888888;          
-    margin-top: 15px;        
+    text-align: center;
+    font-size: 12px;
+    color: #888888;
+    margin-top: 15px;
     direction: ltr;
 }
 
@@ -485,14 +491,14 @@ textarea {
 
     }
 
-   
+
 
     .header-bottom {
         flex-direction: column-reverse;
-        margin-bottom: 5rem;    
+        margin-bottom: 5rem;
         margin-top: 3rem;
         gap: 1rem;
-    
+
     }
 
     .header-bottom-text {
@@ -507,14 +513,15 @@ textarea {
         text-align: center;
 
     }
-    .contactUs-inputs{
-    display: flex;
-    flex-direction: column;
-    
-        
-    
-    
-}
+
+    .contactUs-inputs {
+        display: flex;
+        flex-direction: column;
+
+
+
+
+    }
 }
 
 @media (max-width : 900px) {
@@ -524,6 +531,13 @@ textarea {
 
     .header-top {
         min-width: 30rem;
+    }
+
+    .header-top-img {
+        width: 70px;
+    }
+    .item:first-child{
+        display: none;
     }
 
 
@@ -543,7 +557,7 @@ textarea {
 
 @media (max-width : 640px) {
     body {
-        margin: 0 1.98rem;
+        margin: 0 1.8rem;
     }
 
     .header-top {
@@ -551,15 +565,20 @@ textarea {
         justify-self: center;
         align-items: center;
         min-width: 5rem;
-
+        
 
     }
-
-    .header-top-img {
-        width: 70px;
+    .items{
+        padding: 0 1rem;
     }
+    .item:first-child{
+        display: block;
+    }
+ 
 
-  
+   
+
+
 
     .header-bottom-img {
 
