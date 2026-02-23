@@ -212,24 +212,24 @@
 
                 <div class="inputName">
                     <label class="contactUs-label">نام شما</label>
-                    <input type="text"  class="contactUs-input" id="NameInput">
+                    <input type="text"  class="contactUs-input" id="NameInput" required>
                 </div>
                 <div class="inputNumber">
 
                     <label class="contactUs-label">شماره تماس</label>
-                    <input type="tel"  class="contactUs-input" id="NumberInput">
+                    <input type="tel"  class="contactUs-input" id="NumberInput" required>
                 </div>
 
                 <div class="inputEmail">
 
                     <label class="contactUs-label"> ایمیل</label>
-                    <input type="email"  class="contactUs-input" id="EmailInput">
+                    <input type="email"  class="contactUs-input" id="EmailInput" required>
                 </div>
 
                 <div class="inputMessage">
 
                     <label class="contactUs-label">پیام شما</label>
-                    <textarea class="contactUs-input" id="MessageInput" ></textarea>
+                    <textarea class="contactUs-input" id="MessageInput" required ></textarea>
                 </div>
             </div>
 
@@ -262,6 +262,7 @@
         </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script src="./Script/index.js"></script>
 </body>
 
