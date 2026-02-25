@@ -48,8 +48,13 @@ body {
     list-style: none;
     display: flex;
     gap: 10px;
+    
 
 
+}
+.logos li{
+    justify-content: center;
+    display: flex;
 }
 
 .logo {
