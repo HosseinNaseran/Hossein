@@ -1,4 +1,6 @@
-<font color="red">updating</font>
+$$
+\color{red} \large \text{⚠️new content comming soon⚠️}
+$$
 
 # Personal Portfolio Website
 
