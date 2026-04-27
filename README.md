@@ -1,4 +1,4 @@
-<font color=red>updating</font>
+<font color="red">updating</font>
 
 # Personal Portfolio Website
 
