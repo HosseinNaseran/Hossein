@@ -1,6 +1,8 @@
-$$
-\color{red} \large \text{⚠️new content comming soon⚠️}
-$$
+<p align="center">
+  <img src="https://img.shields.io/badge/status-UPDATING...-red?style=for-the-badge&logo=githubactions&logoColor=white&labelColor=darkred&color=ff3333&animation=blink">
+</p>
+</br>
+
 
 # Personal Portfolio Website
 
@@ -22,27 +24,18 @@ It is designed to showcase personal information, front-end development skills, a
 
 - HTML5
 - CSS3
+- JavaScript
+  </br>
+      <img src="https://i.gifer.com/ZZ5H.gif" width="20" height="20">
 
 
 ## Preview
 
 Here is screenshot of the website:
 
-![Page](https://github.com/HosseinNaseran/Hossein/blob/main/Assets/screencapture-Hossein.png)
+  </br>
+      <img src="https://i.gifer.com/ZZ5H.gif" width="20" height="20">
 
-
-
-## Getting Started
-
-### Clone the repository
-
-```bash
-git clone https://github.com/HosseinNaseran/Hossein.git
-```
-
-### Run the project
-
-Open index.html in your browser.
 
 ## Purpose
 
