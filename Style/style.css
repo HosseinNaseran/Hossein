@@ -33,10 +33,10 @@ html {
 }
 
 body {
-    background-color: #000;
+    background-color: #000000;
     direction: rtl;
     margin: 0 7rem;
-    
+
 }
 
 .header-top {
@@ -44,10 +44,12 @@ body {
     border-radius: 30px;
     align-items: center;
     padding: 0 1rem;
-    border: 2px solid #0f6;
+    border: 1px solid #0f6;
     min-width: 40rem;
     margin-top: .5rem;
-    justify-self: center
+    justify-self: center;
+    background-color: #ffffff20;
+    /* box-shadow: 0px 0px 5px #ffffff20; */
 }
 
 .header-top-img {
@@ -96,7 +98,7 @@ body {
 .header-bottom-img {
     border-radius: 100%;
     width: 100%;
-    animation: 3s linear infinite Ngreen
+    animation: 2s linear infinite Ngreen
 }
 
 @keyframes Ngreen {
@@ -117,7 +119,7 @@ body {
 }
 
 .header-bottom-title {
-    margin-bottom: -1.5rem
+    margin-bottom: -1.5rem;
 }
 
 .header-bottom-title-sec {
@@ -127,31 +129,34 @@ body {
 
 .header-bottom-text {
     max-width: 50rem;
-    
+
 }
 
 .header-bottom-button {
-    padding: .5rem 1rem;
+    padding: 0.7rem 2rem;
     color: #fff;
-    border: 2px solid #0f6;
+    border: 2px solid #000;
     border-radius: 25px;
     cursor: pointer;
     text-decoration: none;
     display: flex;
     width: fit-content;
     margin-top: 2rem;
-    transition: .3s
+    transition: .3s;
+    background-color: #ffffff25;
 }
 
 .header-bottom-button:hover {
-    background-color: #0f6;
-    color: #000
+    color: #0f6;
+    /* color: #000; */
+    border: 2px solid #0f6;
 }
 
 .main-exp {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 5rem
+    margin-bottom: 5rem;
+
 }
 
 .inputEmail,
@@ -181,33 +186,194 @@ body {
     display: flex;
     overflow-x: scroll;
     width: 700px;
-    gap: 1rem
+    gap: 1rem;
+    padding: 5px;
+
 }
 
-.main-left-img {
-    align-items: center;
-    width: 20rem;
-    border-radius: inherit;
-    border: 1px solid gray
-}
-
-.main-left-img-cover {
+.card {
+    border: 1px solid gray;
     border-radius: 25px;
+    perspective: 1000px;
+    height: 320px;
+    width: 340px;
+    backdrop-filter: blur(50px);
+    transition: 0.5s;
+
+}
+
+.card.flipped {
+    position: relative;
+    z-index: 1;
+
+}
+
+.cardInner {
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+    /* width: 100%; */
+    /* height: 100%; */
+
+}
+
+.cardWrapper {
+    position: relative;
+
+}
+
+.cardWrapper::before {
+    content: "";
+    background-color: #00eaff;
+    width: 5rem;
+    height: 5rem;
+    position: absolute;
+    z-index: -1;
+    margin: 1rem 1rem 0 0;
+}
+
+.cardWrapper:first-child::before {
+    background-color: #0f6;
+}
+
+.cardWrapper:nth-child(3)::before {
+    background-color: rgb(0, 0, 255);
+}
+
+.card.flipped .cardInner {
+    transform: rotateY(180deg);
+
+}
+
+.cardFront,
+.cardBack {
+
+    backface-visibility: hidden;
+
+}
+
+.cardBack {
+    transform: rotateY(180deg);
     align-items: center;
     cursor: pointer;
     width: 100%;
     flex-direction: column;
-    text-decoration: none
+    text-decoration: none;
+    display: none;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1rem;
+
+
 }
+
+.card.flipped .cardBack {
+    display: flex;
+
+}
+
+.cardBack label {
+    background: none;
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+
+}
+
+.cardBack a {
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid #0f6;
+    padding: 0.5rem 2rem;
+    border-radius: 25px;
+    transition: 0.3s;
+
+}
+
+.cardBack a:hover {
+    color: #000;
+    background-color: #0f6;
+
+}
+
+.cardBack p {
+    text-align: center;
+    margin: 0 0.5rem;
+}
+
+.backBtn {
+    background-color: inherit;
+    border: none;
+    margin: -20rem -16.5rem 0 0;
+    width: 40px;
+}
+
+.backBtn img {
+    width: 100%;
+}
+
+.backBtn img:active {
+    background-color: rgba(255, 255, 255, 0.15);
+
+}
+
+.main-left-img {
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+
+}
+
+.main-left-img-cover {
+    width: 337px;
+    height: 317px;
+    border-radius: 25px;
+    cursor: pointer;
+    flex-direction: column;
+    transition: 0.5s;
+
+}
+
+.main-left-img-cover div {
+    display: none;
+    transition: 0.5s;
+}
+
+.main-left-img-cover label {
+    background-color: #000;
+    padding: 0.5rem 1rem;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.5s;
+    /* font-size: 20px; */
+}
+
+/* 
+.card .main-left-img-cover div{
+    content: "کلیک کن";
+    background-color: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+     transition: 0.5s;
+    
+} */
+
+
 
 .main-left-label {
     padding: .5rem;
     color: #f5f5f5;
     width: inherit;
-    margin-top: -40px;
+    /* margin-top: -40px; */
     text-align: center;
     border-radius: 0 0 25px 25px;
-    background-color: #00000082
+    background-color: #00000082;
+
 }
 
 .main-tec {
@@ -217,7 +383,8 @@ body {
 }
 
 .main-left::-webkit-scrollbar {
-    width: 1rem
+    width: 1rem;
+
 }
 
 .main-left::-webkit-scrollbar-track {
@@ -260,7 +427,7 @@ body {
 .main-lang {
     gap: 1rem;
     align-items: center;
-    /* margin-left: 4rem */
+
 }
 
 .main-lang-text {
@@ -269,12 +436,51 @@ body {
 
 .main-lang-img {
     width: 2rem;
-    height: 2rem
+    height: 2rem;
+    transition: 0.3s;
+
+}
+
+.main-lang:hover .Html {
+    box-shadow: 0px 0px 80px 5px orange;
+}
+
+.main-lang:hover .Css {
+    box-shadow: 0px 0px 80px 5px lightblue;
+}
+
+.main-lang:hover .Js {
+    box-shadow: 0px 0px 80px 5px yellow;
+}
+
+.main-lang:hover .Ts {
+    box-shadow: 0px 0px 80px 5px lightskyblue;
+}
+
+.main-lang:hover .R {
+    box-shadow: 0px 0px 80px 5px blue;
+}
+
+.main-lang:hover .Bs {
+    box-shadow: 0px 0px 80px 10px rgb(191, 0, 255);
+}
+
+.main-lang:hover .TC {
+    box-shadow: 0px 0px 80px 5px #00eaff;
+}
+
+.main-lang:hover .GH {
+    box-shadow: 0px 0px 80px 5px white;
+}
+
+.main-lang:hover .Npm {
+    box-shadow: 0px 0px 80px 5px red;
 }
 
 .contactUs-input {
     padding: .5rem 1rem;
-    width: fit-content
+    width: fit-content;
+
 }
 
 .contactUsContainer {
@@ -283,18 +489,25 @@ body {
     flex-direction: column;
     gap: 1rem
 }
-.contactUsTitle{
+
+.contactUsTitle {
     text-align: center;
 }
 
 .contactUsButton {
     text-decoration: none;
-    background-color: #fff;
+    background-color: #ffffff40;
     border-radius: 10px;
-    color: #000;
-
+    color: #fff;
+    border: none;
     padding: 0.5rem 2rem;
     width: fit-content;
+}
+
+.contactUsButton:active {
+    /* border: 2px solid #0f6; */
+    background-color: #ffffff20;
+    color: #0f6;
 }
 
 .contactUs-inputs {
@@ -308,7 +521,8 @@ body {
 }
 
 .inputEmail input {
-    width: 17rem
+    width: 17rem;
+    direction: ltr;
 }
 
 .inputMessage {
@@ -325,10 +539,15 @@ textarea {
 
 .contactUs-input {
     background-color: #53535376;
-    border: none;
+    border: 2px solid #000;
     border-radius: 10px;
     color: #fff;
     outline: 0;
+    transition: 0.5s;
+}
+
+.contactUs-input:focus {
+    border: 2px solid #0f6;
 }
 
 .footer-container {
@@ -337,9 +556,10 @@ textarea {
     border-radius: 30px;
     align-items: center;
     padding: 0 1rem;
-    box-shadow: 0 0 5px #fff;
-    border: 1px solid #fff;
-    margin: 1rem auto
+    /* box-shadow: 0 0 5px #fff; */
+    border: 2px solid #0f6;
+    margin: 1rem auto;
+    background-color: #ffffff20;
 }
 
 .copyright {
@@ -398,7 +618,11 @@ textarea {
         display: flex;
         flex-direction: column
     }
-    .inputName input , .inputEmail input , .inputNumber input , .inputMessage textarea{
+
+    .inputName input,
+    .inputEmail input,
+    .inputNumber input,
+    .inputMessage textarea {
         width: 100%;
     }
 }
@@ -412,14 +636,15 @@ textarea {
         min-width: 30rem
     }
 
-    .header-top-img{
+    .header-top-img {
         display: none;
-        
-    }
-    .items{
-        padding: 0;
+
     }
 
+    .items {
+        padding: 0;
+    }
+}
 
 @media (max-width :750px) {
     .header-bottom-text {
@@ -441,7 +666,7 @@ textarea {
         align-items: center;
         min-width: 5rem
     }
-   
+
     .items {
         padding: 0 1rem
     }
@@ -449,10 +674,12 @@ textarea {
     .item:first-child {
         display: block
     }
-    .header-bottom{
+
+    .header-bottom {
         margin-bottom: 1rem;
     }
-    .header-bottom-text{
+
+    .header-bottom-text {
         text-align: center;
     }
 
@@ -464,12 +691,21 @@ textarea {
     }
 
     .main-left {
-        width: 100%
+        width: 100%;
+        /* height: fit-content;
+        overflow-y: hidden;*/
     }
 
+    /*
     .main-left-img {
-        width: 200px
+        width: 200px;
+        height: 200px;
     }
+    .card{
+        width: 200px;
+        height: 200px;
+    } */
+
 
     .main-tec-items {
         width: 20rem
@@ -479,22 +715,23 @@ textarea {
         width: 19rem;
         align-self: center
     }
-    .main-right{
+
+    .main-right {
         align-items: center;
-        
+
     }
-    
-textarea {
-    max-width: 33rem;
-    max-height: 15rem;
-    overflow: hidden;
-    min-width: 10rem;
-    min-height: 5rem;
-}
+
+    textarea {
+        max-width: 33rem;
+        max-height: 15rem;
+        overflow: hidden;
+        min-width: 10rem;
+        min-height: 5rem;
+    }
 
 
     .footer-container {
-        
+
         bottom: 0;
         backdrop-filter: blur(10px);
         padding: 0 20px;
