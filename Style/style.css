@@ -238,6 +238,9 @@ body {
 .cardWrapper:nth-child(3)::before {
     background-color: rgb(0, 0, 255);
 }
+.cardWrapper:nth-child(4):before{
+    background-color: purple;
+}
 
 .card.flipped .cardInner {
     transform: rotateY(180deg);
